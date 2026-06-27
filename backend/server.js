@@ -5,7 +5,11 @@ const app = express()
 const port = 5000
 
 app.use(cors({
-  origin: "https://netflix-login-rho.vercel.app"
+  origin: [
+    "https://netflix-login-rho.vercel.app",
+    "https://netflix-login-v12g.vercel.app/"
+  ]
+  
 }))
 app.use(express.json())
 
