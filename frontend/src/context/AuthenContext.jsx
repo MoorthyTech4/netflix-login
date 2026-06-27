@@ -56,7 +56,7 @@ export function AuthProvider({ children }) {
     setLoading(true)
 
     axios
-      .post("http://localhost:5000/api/login", { email, password })
+      .post("https://netflix-login-18bd-ay156935i-moorthytech4s-projects.vercel.app/api/login", { email, password })
       .then((res) => {
         navigate("/dashboard")
       })
